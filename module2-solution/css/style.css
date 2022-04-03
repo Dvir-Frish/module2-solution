@@ -1,0 +1,102 @@
+body {
+  background: lightblue;
+}
+div {
+  position: absolute;
+  background-color: blue;
+  border: 1px;
+  border-color: black;
+  border: solid;
+}
+p {
+  background-color: burlywood;
+  position: relative;
+}
+h1 {
+  color: red;
+  text-align: center;
+}
+/* for big screens */
+@media (min-width: 992px) {
+  div {
+    margin: 30px;
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+  p {
+    margin: 0px;
+    padding: 5px;
+    left: 92.5%;
+    width: fit-content;
+    color: brown;
+  }
+  .first {
+    left: 0%;
+    right: 67%;
+  }
+  .second {
+    left: 33%;
+    right: 34%;
+  }
+  .third {
+    left: 66%;
+  }
+}
+/* for medium screens */
+@media (min-width: 768px) and (max-width: 991px) {
+  div {
+    margin: 30px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  p {
+    margin: 0px;
+    padding: 5px;
+    left: 90.7%;
+    width: fit-content;
+  }
+  .third > p {
+    margin: 0px;
+    padding: 5px;
+    left: 95.7%;
+    width: fit-content;
+  }
+  .first {
+    left: 0%;
+    right: 50%;
+  }
+  .second {
+    left: 50%;
+    right: 0%;
+  }
+  .third {
+    top: 250px;
+    left: 0%;
+  }
+}
+/* for small screens */
+@media (max-width: 767px) {
+  div {
+    margin: 30px;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  p {
+    margin: 0px;
+    padding: 5px;
+    left: 94%;
+    width: fit-content;
+  }
+  .first {
+    top: 0px;
+    right: 0%;
+  }
+  .second {
+    top: 150px;
+    right: 0%;
+  }
+  .third {
+    top: 300px;
+    right: 0%;
+  }
+}
